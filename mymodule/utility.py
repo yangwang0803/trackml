@@ -18,6 +18,12 @@ def Score(event_id, data, truth):
     submission = CreateSubmission(event_id, data)
     
     return score_event(truth, submission)
+
+def FixTrackID(submission):
+    
+    unique, inverse = np.unique(submission.track_id, return_inverse=True)
+    
+    return submission.assign(track_id=inverse)
     
 def Extend(data, limit=0.04, num_neighbours=18):
     
