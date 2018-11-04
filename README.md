@@ -9,4 +9,4 @@ This repository only contains the code for predicting a single event. See [CFlow
 3. Merge tracks. This step is in `/mymodule/merger.py`
 4. Above procedures are repeated several times with various parameters, focusing on clustering tracks with different length with longer track first.
 
-The entire procedure is in `pipeline.ipynb`
+The full pipeline is in `pipeline.ipynb`
