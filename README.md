@@ -7,6 +7,6 @@ This repository only contains the code for predicting a single event. See [CFlow
 1. Cluster hits using DBSCAN on transformed data using various parameters to generate a pool of track candidates. This step is in `/mymodule/cluster2.py`
 2. Remove duplicate tracks from the pool of candidates. Create a track object for each candidate. Perform helix fitting and outlier removal. This step is in `/mymodule/track.py`
 3. Merge tracks. This step is in `/mymodule/merger.py`
-4. Above procedures are repeated several times with various parameters, focusing on clustering tracks with different length with longer track first.
+4. Above procedures are repeated several times with various parameters, focusing on clustering tracks with longer length first.
 
 The full pipeline is in `pipeline.ipynb`
